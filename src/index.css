@@ -121,9 +121,10 @@ display: inline-block;
     background-image:url('/AI_Generated_Image(1).jpeg');
     background-size: 1500px 1400px;
   }
-  h2{
-    width: auto;
-  }
+ h2{
+	 width:auto;
+  color: white;
+}
   input[type="text"] {
     width: 60%;
   }
