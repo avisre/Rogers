@@ -15,11 +15,12 @@ body{
   max-height: 100vh;
   font-family: 'Noto Sans', sans-serif;
   text-align: center;
-  background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mjl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=4320&q=60');
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url('/a--beautiful-curvy-shaped--woman-walking-alone-towards-us-in-a-narrow-street-overlooking-a-city-like-cyberpunk(1).png');
+
   /* custom size to align the background picture perfectly on the x and y axis*/
-  background-size: 100% 120%;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
   margin-top: 30px;
 }
 
@@ -121,10 +122,9 @@ display: inline-block;
     background-image:url('/AI_Generated_Image(1).jpeg');
     background-size: 1500px 1400px;
   }
- h2{
-	 width:auto;
-  color: white;
-}
+  h2{
+    width: auto;
+  }
   input[type="text"] {
     width: 60%;
   }
