@@ -1,10 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
   const [tasks, setTasks] = useState([]);
   const [taskText, setTaskText] = useState("");
   const [editingTaskId, setEditingTaskId] = useState(null);
+
+  // Load tasks from local storage when the component mounts
+  useEffect(() => {
+    const storedTasks = localStorage.getItem("tasks");
+    if (storedTasks) {
+      setTasks(JSON.parse(storedTasks));
+    }
+  }, []);
+
+  const saveTasksToLocalStorage = (tasksToSave) => {
+    localStorage.setItem("tasks", JSON.stringify(tasksToSave));
+  };
 
   const addTask = () => {
     if (taskText.trim() === "") {
@@ -21,13 +33,17 @@ function App() {
       id: new Date().getTime(),
       text: taskText,
     };
-    setTasks([...tasks, newTask]);
+
+    const updatedTasks = [...tasks, newTask];
+    setTasks(updatedTasks);
+    saveTasksToLocalStorage(updatedTasks);
     setTaskText("");
   };
 
   const deleteTask = (taskId) => {
     const updatedTasks = tasks.filter((task) => task.id !== taskId);
     setTasks(updatedTasks);
+    saveTasksToLocalStorage(updatedTasks);
   };
 
   const startEdit = (taskId) => {
