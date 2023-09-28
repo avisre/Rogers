@@ -118,7 +118,7 @@ display: inline-block;
 @media screen and (max-width: 820px) {
   body{
     text-align: center;
-    background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mjl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=4320&q=60');
+    background-image:url('/AI_Generated_Image(1).jpeg');
     background-size: 1500px 1400px;
   }
   h2{
@@ -142,15 +142,18 @@ display: inline-block;
   }
   body{
     text-align: center;
-    background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mjl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=4320&q=60');
-     background-size: 1200px 1000px;
+    background-image: url('/AI_Generated_Image.jpeg');
+    background-size: auto;
+    background-position: center;
   }
   button{
     padding: 1px 2px;
 
   };
 
-
+h2{
+  color: white;
+}
   .task-list{
     width: 70vw ;
    
