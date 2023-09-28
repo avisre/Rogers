@@ -124,7 +124,7 @@ display: inline-block;
   }
   h2{
     width: auto;
-	  color:white;
+color:white;
   }
   input[type="text"] {
     width: 60%;
