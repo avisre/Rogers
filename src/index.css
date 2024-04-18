@@ -91,7 +91,7 @@ li {
 }
 
 .task-list{
-  width: 70vw;
+  width: 50vw;
   height: 73vh;
   /* use blur effect to get ideal background color; */
   backdrop-filter: blur(5px);
